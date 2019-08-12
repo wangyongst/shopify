@@ -4,6 +4,8 @@
         <class>com.spring.boot.manager.entity.Example</class>
         <class>com.spring.boot.manager.entity.Mailinfo</class>
         <class>com.spring.boot.manager.entity.Size</class>
+        <class>com.spring.boot.manager.entity.Carturl</class>
+        <class>com.spring.boot.manager.entity.Product</class>
         <properties>
             <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/shopify"/>
             <property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>

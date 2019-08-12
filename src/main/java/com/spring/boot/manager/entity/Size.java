@@ -1,12 +1,11 @@
 package com.spring.boot.manager.entity;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.Objects;
 
 @Entity
-public class Size {
-    private static final long serialVersionUID = 1L;
-
+public class Size implements Serializable {
     @Id
     @Column(name = "id", nullable = false)
     @GeneratedValue(strategy = GenerationType.IDENTITY)
