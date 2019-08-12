@@ -17,7 +17,7 @@ public class AdminController {
 
     @GetMapping("/get/mailinfo")
     public Result getMailinfo() {
-
+        return null;
     }
 
 }
