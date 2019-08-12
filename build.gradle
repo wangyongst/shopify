@@ -1,0 +1,50 @@
+group = 'com.spring.boot'
+version = '0.0.1'
+
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'maven'
+
+repositories {
+    mavenLocal()
+    maven { url "http://maven.aliyun.com/nexus/content/groups/public/" }
+    mavenCentral()
+}
+
+buildscript {
+    repositories {
+        mavenLocal()
+        maven { url "http://maven.aliyun.com/nexus/content/groups/public/" }
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'io.spring.gradle:dependency-management-plugin:1.0.7.RELEASE'
+        classpath('org.springframework.boot:spring-boot-gradle-plugin:2.0.1.RELEASE')
+    }
+}
+
+
+apply plugin: 'io.spring.dependency-management'
+apply plugin: 'org.springframework.boot'
+
+dependencyManagement {
+    imports {
+        mavenBom 'io.spring.platform:platform-bom:Cairo-RELEASE'
+    }
+}
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+[compileJava, compileTestJava, javadoc]*.options*.encoding = "utf-8"
+
+dependencies {
+    compile 'org.springframework.boot:spring-boot-devtools'
+    compile 'org.springframework.boot:spring-boot-starter-web'
+    compile 'org.apache.httpcomponents:httpclient'
+    compile 'org.apache.commons:commons-lang3'
+    compile 'org.apache.tomcat:tomcat-jdbc'
+    compile 'mysql:mysql-connector-java'
+    compile 'org.springframework.data:spring-data-jpa'
+    compile 'org.hibernate:hibernate-entitymanager'
+}
