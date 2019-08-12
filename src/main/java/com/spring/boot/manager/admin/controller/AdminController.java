@@ -14,10 +14,4 @@ public class AdminController {
 
     @Autowired
     public AdminService adminService;
-
-    @GetMapping("/get/mailinfo")
-    public Result getMailinfo() {
-        return null;
-    }
-
 }
