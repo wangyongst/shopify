@@ -45,5 +45,9 @@ dependencies {
     compile 'mysql:mysql-connector-java'
     compile 'org.springframework.data:spring-data-jpa'
     compile 'org.hibernate:hibernate-entitymanager'
-    compile 'org.apache.httpcomponents:httpclient'
+    // https://mvnrepository.com/artifact/io.webfolder/cdp4j
+    compile group: 'io.webfolder', name: 'cdp4j', version: '3.0.12'
+    // https://mvnrepository.com/artifact/org.jvnet.winp/winp
+    compile group: 'org.jvnet.winp', name: 'winp', version: '1.28'
+    compile('org.jsoup:jsoup:1.11.3')
 }
