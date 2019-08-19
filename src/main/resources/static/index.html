@@ -48,25 +48,13 @@
                     <div class="card-body card-block">
                         <form class="form-horizontal" name="makecarturlform">
                             <div class="row form-group">
-                                <div class="col col-md-3"><label for="testproduct" class=" form-control-label">测试商品</label></div>
-                                <div class="col-12 col-md-9"><input type="text" id="testproduct" name="text-input" placeholder="Text" class="form-control"></div>
-                            </div>
-                            <div class="row form-group">
-                                <div class="col col-md-3"><label for="testproductsize" class=" form-control-label">测试商品尺寸</label></div>
-                                <div class="col-12 col-md-9"><input type="text" id="testproductsize" name="text-input" placeholder="Text" class="form-control"></div>
-                            </div>
-                            <div class="row form-group">
-                                <div class="col col-md-3"><label for="product" class=" form-control-label">抢购商品</label></div>
-                                <div class="col-12 col-md-9"><input type="text" id="product" name="text-input" placeholder="Text" class="form-control"></div>
-                            </div>
-                            <div class="row form-group">
-                                <div class="col col-md-3"><label for="productsize" class=" form-control-label">抢购商品尺寸</label></div>
-                                <div class="col-12 col-md-9"><input type="text" id="productsize" name="text-input" placeholder="Text" class="form-control"></div>
-                            </div>
-                            <div class="row form-group">
-                                <div class="col col-md-3"><label class=" form-control-label">加车链接</label></div>
+                                <div class="col col-md-3"><label class=" form-control-label">Cart URL</label></div>
                                 <div class="col-12 col-md-9">
-                                    <p class="form-control-static" id="makecarturlresult"></p>
+                                    <p class="form-control-static" id="carturl"></p>
+                                </div>
+                                <div class="col col-md-3"><label class=" form-control-label">Bypass URL</label></div>
+                                <div class="col-12 col-md-9">
+                                    <p class="form-control-static" id="bypassurl"></p>
                                 </div>
                             </div>
                         </form>
@@ -108,5 +96,6 @@
 <script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/moment.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fullcalendar@3.9.0/dist/fullcalendar.min.js"></script>
 <script src="assets/js/init/fullcalendar-init.js"></script>
+<script src="js/index.js"></script>
 </body>
 </html>
